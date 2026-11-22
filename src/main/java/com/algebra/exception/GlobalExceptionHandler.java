@@ -34,6 +34,11 @@ public class GlobalExceptionHandler {
         return buildError(HttpStatus.BAD_REQUEST, errors);
     }
 
+    @ExceptionHandler(org.springframework.web.servlet.resource.NoResourceFoundException.class)
+    public ResponseEntity<Map<String, Object>> handleNoResource(org.springframework.web.servlet.resource.NoResourceFoundException ex) {
+        return buildError(HttpStatus.NOT_FOUND, "Resource not found: " + ex.getResourcePath());
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGeneral(Exception ex) {
         return buildError(HttpStatus.INTERNAL_SERVER_ERROR,

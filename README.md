@@ -2,6 +2,10 @@
 
 A RESTful Spring Boot application for **storing and evaluating algebraic equations** using an **expression (postfix) tree**.
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
 
 ## Table of Contents
@@ -17,6 +21,10 @@ A RESTful Spring Boot application for **storing and evaluating algebraic equatio
 9. [Loom Video Demo](#loom-video-demo)
 10. [Project Structure](#project-structure)
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
 
 ## Swagger / OpenAPI Documentation
@@ -25,7 +33,15 @@ Interactive Swagger UI is enabled by default:
 - **Local Swagger UI**: `http://localhost:8080/swagger-ui.html`
 - **OpenAPI JSON**: `http://localhost:8080/v3/api-docs`
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
+
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
 
 ---
 
@@ -41,13 +57,25 @@ This application:
 ### Supported Features
 
 | Feature | Example |
-|---|---|
+|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|
 | Implicit multiplication | `3x` → `3 * x` |
 | Exponentiation | `x^2 + y^2` |
 | Parenthesised sub-expressions | `(x + 1) * (y - 2)` |
 | Unary minus | `-x + 3` |
 | Decimal coefficients | `3.5x + 2.1` |
 | Multi-variable equations | `3x + 2y - z` |
+
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
 
 ---
 
@@ -68,12 +96,20 @@ Controller (REST) → Service (Business Logic) → Repository (In-Memory Storage
 - **Global Exception Handler** — `@RestControllerAdvice` for consistent error responses
 - **Repository Pattern** — In-memory storage with thread-safe `ConcurrentHashMap`
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
 
 ## Prerequisites
 
 - **Java 17+** (tested with Java 22)
 - **Maven 3.8+** (or use the included Maven Wrapper `mvnw.cmd`)
+
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
 
 ---
 
@@ -107,6 +143,10 @@ java -jar target/algebra-solver-1.0.0.jar
 
 The application starts on **http://localhost:8080**.
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
 
 ## API Endpoints
@@ -133,6 +173,10 @@ Content-Type: application/json
 }
 ```
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
 
 ### 2. Retrieve All Stored Equations
@@ -156,6 +200,10 @@ GET /api/equations
   ]
 }
 ```
+
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
 
 ---
 
@@ -193,6 +241,10 @@ Content-Type: application/json
 
 > **Note:** `3x + 2y - z` with `x=2, y=3, z=1` → `3(2) + 2(3) - 1 = 6 + 6 - 1 = 11`
 
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
 ---
 
 ### Error Responses
@@ -208,12 +260,28 @@ All errors return a consistent JSON structure:
 ```
 
 | Scenario | Status | Message |
-|---|---|---|
+|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|
 | Blank/missing equation | 400 | `equation: must not be blank` |
 | Invalid syntax | 400 | `Mismatched parentheses` |
 | Equation not found | 400 | `Equation not found with id: 999` |
 | Missing variable | 400 | `Missing value for variable: 'y'` |
 | Division by zero | 400 | `Division by zero` |
+
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
 
 ---
 
@@ -235,7 +303,19 @@ mvnw.cmd test
 ### Test categories
 
 | Test Class | Scope | Tests |
-|---|---|---|
+|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
+
+---|
 | `ExpressionParserTest` | Tokenizer, Shunting-Yard, tree building, infix reconstruction | 13 |
 | `ExpressionEvaluatorTest` | Tree evaluation, edge cases (division by zero, missing vars, unary minus) | 10 |
 | `EquationServiceTest` | Business-logic integration (store, retrieve, evaluate) | 7 |
@@ -253,6 +333,10 @@ Import the following requests into Postman:
 
 3. **Evaluate** — `POST http://localhost:8080/api/equations/1/evaluate`  
    Body: `{ "variables": { "x": 2, "y": 3, "z": 1 } }`
+
+## 🌐 Live Deployment
+- **Live Base URL**: https://algebra-solver-1bm3.onrender.com
+- **Swagger Documentation**: https://algebra-solver-1bm3.onrender.com/swagger-ui.html
 
 ---
 
