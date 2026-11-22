@@ -8,11 +8,24 @@ A RESTful Spring Boot application for **storing and evaluating algebraic equatio
 
 1. [Overview](#overview)
 2. [Architecture & Design](#architecture--design)
-3. [Prerequisites](#prerequisites)
-4. [Setup & Run](#setup--run)
-5. [API Endpoints](#api-endpoints)
-6. [Testing](#testing)
-7. [Project Structure](#project-structure)
+3. [Swagger / OpenAPI Documentation](#swagger--openapi-documentation)
+4. [Prerequisites](#prerequisites)
+5. [Setup & Run](#setup--run)
+6. [API Endpoints](#api-endpoints)
+7. [Testing](#testing)
+8. [Deployment Guide (Live URL)](#deployment-guide-live-url)
+9. [Loom Video Demo](#loom-video-demo)
+10. [Project Structure](#project-structure)
+
+---
+
+## Swagger / OpenAPI Documentation
+
+Interactive Swagger UI is enabled by default:
+- **Local Swagger UI**: `http://localhost:8080/swagger-ui.html`
+- **OpenAPI JSON**: `http://localhost:8080/v3/api-docs`
+
+---
 
 ---
 
